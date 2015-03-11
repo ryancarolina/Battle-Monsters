@@ -128,7 +128,7 @@ function create() {
     //Load background image
     game.add.sprite(0,0, 'sky');
 
-    game.add.sprite(0, 40, 'blondeTrainerGuy');
+    game.add.sprite(0, 400, 'blondeTrainerGuy');
 
     game.add.sprite(700, 40, 'purpleTrainerGirl');
 
@@ -203,34 +203,34 @@ function createMonster(){
     monsterDMG1 = 1 + +monRollRound5;
     monsterSPD1 = monRollRound6;
 
-    monsterName1Text = game.add.text(200, 40, monsterName1);
+    monsterName1Text = game.add.text(200, 370, monsterName1);
     monsterName1Text.font = 'Arial';
     monsterName1Text.fontSize = 20;
     monsterName1Text.fontWeight = 'bold';
     monsterName1Text.stroke = '#ffffff';
     monsterName1Text.strokeThickness = 3;
 
-    monsterHP1Text = game.add.text(200, 80, 'HP: ' + monsterHP1);
+    monsterHP1Text = game.add.text(200, 410, 'HP: ' + monsterHP1);
     monsterHP1Text.font = 'Arial';
     monsterHP1Text.fontSize = 14;
     monsterHP1Text.fontWeight = 'bold';
 
-    monsterDEF1Text = game.add.text(200, 120, 'DEF: ' + monsterDEF1);
+    monsterDEF1Text = game.add.text(200, 450, 'DEF: ' + monsterDEF1);
     monsterDEF1Text.font = 'Arial';
     monsterDEF1Text.fontSize = 14;
     monsterDEF1Text.fontWeight = 'bold';
 
-    monsterATK1Text = game.add.text(200, 160, 'ATK: ' + monsterATK1);
+    monsterATK1Text = game.add.text(200, 490, 'ATK: ' + monsterATK1);
     monsterATK1Text.font = 'Arial';
     monsterATK1Text.fontSize = 14;
     monsterATK1Text.fontWeight = 'bold';
 
-    monsterDMG1Text = game.add.text(200, 200, 'DMG: ' + monsterDMG1);
+    monsterDMG1Text = game.add.text(200, 530, 'DMG: ' + monsterDMG1);
     monsterDMG1Text.font = 'Arial';
     monsterDMG1Text.fontSize = 14;
     monsterDMG1Text.fontWeight = 'bold';
 
-    monsterSPD1Text = game.add.text(200, 240, 'SPD: ' + monsterSPD1);
+    monsterSPD1Text = game.add.text(200, 570, 'SPD: ' + monsterSPD1);
     monsterSPD1Text.font = 'Arial';
     monsterSPD1Text.fontSize = 14;
     monsterSPD1Text.fontWeight = 'bold';
@@ -418,31 +418,31 @@ function loadMonSprite1(){
 
     if(monsterName1 === "Arachnix"){
 
-        game.add.sprite(200, 320, 'arachnix');
+        game.add.sprite(500, 430, 'arachnix');
 
     } else if(monsterName1 === "Shellshock"){
 
-        game.add.sprite(200, 320, 'shellshock');
+        game.add.sprite(500, 430, 'shellshock');
 
     } else if(monsterName1 === "Backoo"){
 
-        game.add.sprite(200, 320, 'backoo');
+        game.add.sprite(500, 430, 'backoo');
 
     } else if(monsterName1 === "Porkchop"){
 
-        game.add.sprite(200, 320, 'porkchop');
+        game.add.sprite(500, 430, 'porkchop');
 
     } else if(monsterName1 === "Gigantis"){
 
-        game.add.sprite(200, 320, 'gigantis');
+        game.add.sprite(500, 430, 'gigantis');
 
     } else if(monsterName1 === "Gyascutys"){
 
-        game.add.sprite(200, 320, 'gyascutys');
+        game.add.sprite(500, 430, 'gyascutys');
 
     } else if(monsterName1 === "Abaia"){
 
-        game.add.sprite(200, 320, 'abaia');
+        game.add.sprite(500, 430, 'abaia');
     }
 }
 
@@ -450,31 +450,31 @@ function loadMonSprite2(){
 
     if(monsterName2 === "Arachnix"){
 
-        game.add.sprite(500, 320, 'arachnix');
+        game.add.sprite(150, 100, 'arachnix');
 
     } else if(monsterName2 === "Shellshock"){
 
-        game.add.sprite(500, 320, 'shellshock');
+        game.add.sprite(150, 100, 'shellshock');
 
     } else if(monsterName2 === "Backoo"){
 
-        game.add.sprite(500, 320, 'backoo');
+        game.add.sprite(150, 100, 'backoo');
 
     } else if(monsterName2 === "Porkchop"){
 
-        game.add.sprite(500, 320, 'porkchop');
+        game.add.sprite(150, 100, 'porkchop');
 
     } else if(monsterName2 === "Gigantis"){
 
-        game.add.sprite(500, 320, 'gigantis');
+        game.add.sprite(150, 100, 'gigantis');
 
     } else if(monsterName2 === "Gyascutys"){
 
-        game.add.sprite(500, 320, 'gyascutys');
+        game.add.sprite(150, 100, 'gyascutys');
 
     } else if(monsterName2 === "Abaia"){
 
-        game.add.sprite(500, 320, 'abaia');
+        game.add.sprite(150, 100, 'abaia');
     }
 }
 
@@ -487,7 +487,7 @@ function knockOut(){
 
     if(monsterHP1 <= 0){
 
-        game.add.text(100, 280, 'KNOCKED OUT!', { fontSize: '32px', fill: '#000'});
+        game.add.text(500, 280, 'KNOCKED OUT!', { fontSize: '32px', fill: '#000'});
 
         //game.time.events.add(Phaser.Timer.SECOND * 2, 100, reloadPage, this);
 
@@ -498,7 +498,7 @@ function knockOut(){
 
     if(monsterHP2 <= 0){
 
-        game.add.text(500, 280, 'KNOCKED OUT!', { fontSize: '32px', fill: '#000'});
+        game.add.text(150, 280, 'KNOCKED OUT!', { fontSize: '32px', fill: '#000'});
 
         //game.time.events.add(Phaser.Timer.SECOND * 2, 100, reloadPage, this);
 
@@ -599,7 +599,7 @@ function defSound(){
 
 function atkAnimation1(){
 
-    attackSprite = game.add.sprite(450 + Math.random() * 50, 320 + Math.random() * 100, 'attack');
+    attackSprite = game.add.sprite(150, 100, 'attack');
     attackSprite.animations.add('attack');
     anim = attackSprite.animations.play('attack', 15, false);
     anim.onComplete.add(destroyAnim, this);
@@ -608,7 +608,7 @@ function atkAnimation1(){
 
 function atkAnimation2(){
 
-    attackSprite = game.add.sprite(150 + Math.random() * 50, 320 + Math.random() * 100, 'attack');
+    attackSprite = game.add.sprite(500, 430, 'attack');
     attackSprite.animations.add('attack');
     anim = attackSprite.animations.play('attack', 15, false);
     anim.onComplete.add(destroyAnim, this);
@@ -616,7 +616,7 @@ function atkAnimation2(){
 
 function defAnimation1(){
 
-    defSprite = game.add.sprite(450, 300, 'block');
+    defSprite = game.add.sprite(120, 80, 'block');
     defSprite.animations.add('block');
     anim = defSprite.animations.play('block', 15, false);
     anim.onComplete.add(destroyAnim2, this);
@@ -625,7 +625,7 @@ function defAnimation1(){
 
 function defAnimation2(){
 
-    defSprite = game.add.sprite(150, 300, 'block');
+    defSprite = game.add.sprite(470, 400, 'block');
     defSprite.animations.add('block');
     anim = defSprite.animations.play('block', 15, false);
     anim.onComplete.add(destroyAnim2, this);
