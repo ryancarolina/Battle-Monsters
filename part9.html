@@ -30,6 +30,8 @@
 </head>
 <body>
 
+<img src="/assets/Title.png" width="861" height="126">
+
 <button onclick="battle()">BATTLE!</button>
 
 
@@ -201,19 +203,37 @@ function createMonster(){
     monsterDMG1 = 1 + +monRollRound5;
     monsterSPD1 = monRollRound6;
 
-    monsterName1Text = game.add.text(200, 40, monsterName1, { fontSize: '32px', fill: '#000'});
+    monsterName1Text = game.add.text(200, 40, monsterName1);
     monsterName1Text.font = 'Arial';
+    monsterName1Text.fontSize = 20;
     monsterName1Text.fontWeight = 'bold';
+    monsterName1Text.stroke = '#ffffff';
+    monsterName1Text.strokeThickness = 3;
 
-    monsterHP1Text = game.add.text(200, 80, 'HP: ' + monsterHP1, { fontSize: '32px', fill: '#000'});
+    monsterHP1Text = game.add.text(200, 80, 'HP: ' + monsterHP1);
+    monsterHP1Text.font = 'Arial';
+    monsterHP1Text.fontSize = 14;
+    monsterHP1Text.fontWeight = 'bold';
 
-    monsterDEF1Text = game.add.text(200, 120, 'DEF: ' + monsterDEF1, { fontSize: '32px', fill: '#000'});
+    monsterDEF1Text = game.add.text(200, 120, 'DEF: ' + monsterDEF1);
+    monsterDEF1Text.font = 'Arial';
+    monsterDEF1Text.fontSize = 14;
+    monsterDEF1Text.fontWeight = 'bold';
 
-    monsterATK1Text = game.add.text(200, 160, 'ATK: ' + monsterATK1, { fontSize: '32px', fill: '#000'});
+    monsterATK1Text = game.add.text(200, 160, 'ATK: ' + monsterATK1);
+    monsterATK1Text.font = 'Arial';
+    monsterATK1Text.fontSize = 14;
+    monsterATK1Text.fontWeight = 'bold';
 
-    monsterDMG1Text = game.add.text(200, 200, 'DMG: ' + monsterDMG1, { fontSize: '32px', fill: '#000'});
+    monsterDMG1Text = game.add.text(200, 200, 'DMG: ' + monsterDMG1);
+    monsterDMG1Text.font = 'Arial';
+    monsterDMG1Text.fontSize = 14;
+    monsterDMG1Text.fontWeight = 'bold';
 
-    monsterSPD1Text = game.add.text(200, 240, 'SPD: ' + monsterSPD1, { fontSize: '32px', fill: '#000'});
+    monsterSPD1Text = game.add.text(200, 240, 'SPD: ' + monsterSPD1);
+    monsterSPD1Text.font = 'Arial';
+    monsterSPD1Text.fontSize = 14;
+    monsterSPD1Text.fontWeight = 'bold';
 
     loadMonSprite1()
 
