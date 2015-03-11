@@ -301,17 +301,37 @@ monRoll7 = Math.random() * 10;
     monsterDMG2 = 1 + +monRollRound11;
     monsterSPD2 = monRollRound12;
 
-    game.add.text(500, 40, monsterName2, { fontSize: '32px', fill: '#000'});
+    monsterName2Text = game.add.text(500, 40, monsterName2);
+    monsterName2Text.font = 'Arial';
+    monsterName2Text.fontSize = 20;
+    monsterName2Text.fontWeight = 'bold';
+    monsterName2Text.stroke = '#ffffff';
+    monsterName2Text.strokeThickness = 3;
 
-    monsterHP2Text = game.add.text(500, 80, 'HP: ' + monsterHP2, { fontSize: '32px', fill: '#000'});
+    monsterHP2Text = game.add.text(500, 80, 'HP: ' + monsterHP2);
+    monsterHP2Text.font = 'Arial';
+    monsterHP2Text.fontSize = 14;
+    monsterHP2Text.fontWeight = 'bold';
 
-    monsterDEF2Text = game.add.text(500, 120, 'DEF: ' + monsterDEF2, { fontSize: '32px', fill: '#000'});
+    monsterDEF2Text = game.add.text(500, 120, 'DEF: ' + monsterDEF2);
+    monsterDEF2Text.font = 'Arial';
+    monsterDEF2Text.fontSize = 14;
+    monsterDEF2Text.fontWeight = 'bold';
 
-    monsterATK2Text = game.add.text(500, 160, 'ATK: ' + monsterATK2, { fontSize: '32px', fill: '#000'});
+    monsterATK2Text = game.add.text(500, 160, 'ATK: ' + monsterATK2);
+    monsterATK2Text.font = 'Arial';
+    monsterATK2Text.fontSize = 14;
+    monsterATK2Text.fontWeight = 'bold';
 
-    monsterDMG2Text = game.add.text(500, 200, 'DMG: ' + monsterDMG2, { fontSize: '32px', fill: '#000'});
+    monsterDMG2Text = game.add.text(500, 200, 'DMG: ' + monsterDMG2);
+    monsterDMG2Text.font = 'Arial';
+    monsterDMG2Text.fontSize = 14;
+    monsterDMG2Text.fontWeight = 'bold';
 
-    monsterSPD2Text = game.add.text(500, 240, 'SPD: ' + monsterSPD2, { fontSize: '32px', fill: '#000'});
+    monsterSPD2Text = game.add.text(500, 240, 'SPD: ' + monsterSPD2);
+    monsterSPD2Text.font = 'Arial';
+    monsterSPD2Text.fontSize = 14;
+    monsterSPD2Text.fontWeight = 'bold';
 
     loadMonSprite2()
 
