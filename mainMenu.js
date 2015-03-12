@@ -1,19 +1,4 @@
-<!doctype html> 
-<html lang="en"> 
-<head> 
-	<meta charset="UTF-8" />
-    <title> Neo Battle Monsters - Main Menu </title>
-	<script type="text/javascript" src="js/phaser.min.js"></script>
-	<script type="text/javascript" src="">
-    <style type="text/css">
 
-    </style>
-</head>
-<body>
-
-
-
-<script type="text/javascript" >
 
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
@@ -32,7 +17,8 @@ function preload() {
 
 function create() {
 
-
+game.add.sprite(0,0, 'sky');
+game.add.text(400, 300, 'TEST TEST TEST TEST TEST');
    
 
     
@@ -52,12 +38,3 @@ function update() {
 
 
 }//END OF UPDATE
-
-
-
-</script>
-
-
-
-</body>
-</html>
